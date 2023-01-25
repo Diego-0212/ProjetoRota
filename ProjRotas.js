@@ -18,8 +18,8 @@ var callback = function (request, response){
         response.end("ROTA NÃO EXISTENTE: " + parts.path);
     }  
 };
-var servidor = http.createServer(callback);
+var server = http.createServer(callback);
  
-servidor.listen(8000);
+server.listen(8000);
 
 console.log("http://localhost:8000");
